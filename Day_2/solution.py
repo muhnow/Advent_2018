@@ -13,6 +13,8 @@ def part1():
 			has_two	= True if count == 2 else has_two
 			has_three = True if count == 3 else has_three
 
+			if(has_two and has_three): break
+
 		two_count += 1 if has_two else 0	
 		three_count += 1 if has_three else 0
 		has_two = has_three = False
